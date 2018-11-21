@@ -1,0 +1,55 @@
+package: git.xiaojukeji.com/trade-engine/search-broker
+import:
+- package: golang.org/x/sys
+  repo: https://github.com/golang/sys.git
+  subpackages:
+  - unix
+- package: github.com/stretchr/testify
+  subpackages:
+  - mock
+- package: golang.org/x/crypto
+  repo: https://github.com/golang/crypto.git
+  subpackages:
+  - ssh
+- package: golang.org/x/sync
+  repo: https://github.com/golang/sync.git
+  subpackages:
+  - errgroup
+- package: golang.org/x/net
+  repo: https://github.com/golang/net.git
+  subpackages:
+  - context
+- package: git.xiaojukeji.com/golang/toml
+  version: master
+- package: git.xiaojukeji.com/soda-framework/go-log
+  version: master
+- package: git.xiaojukeji.com/soda-framework/go-http
+  version: master
+- package: git.xiaojukeji.com/soda-framework/go-redis
+  version: master
+  subpackages:
+  - server
+- package: git.xiaojukeji.com/trade-engine/search-broker-idl
+  version: master
+- package: git.xiaojukeji.com/soda-server/shop-idl
+  version: master
+- package: git.xiaojukeji.com/soda-server/item-idl
+  version: master
+- package: git.xiaojukeji.com/soda-engine/de-st-forecastor-idl
+  version: master
+- package: git.xiaojukeji.com/soda-server/recsys-depend-idl
+  version: master
+- package: git.xiaojukeji.com/soda-server/rank-idl
+  version: master
+- package: gopkg.in/olivere/elastic.v5
+  version: v5.0.71
+- package: github.com/coocood/freecache
+  version: v1.0.1
+- package: git.xiaojukeji.com/soda-framework/go-thrift
+  version: master
+- package: go.intra.xiaojukeji.com/apollo/apollo-golang-sdk-v2
+  version: v2.6.1
+- package: git.xiaojukeji.com/soda-server/fc-proxy-idl
+  version: e5e3cd5e1378dd5c677920af9e629ee15b0d7bbf
+- package: git.xiaojukeji.com/soda-server/es_lib
+  version: master
